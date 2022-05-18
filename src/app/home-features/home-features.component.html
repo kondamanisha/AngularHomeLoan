@@ -1,0 +1,143 @@
+<!-- <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="home-features.component.scss">
+</head> -->
+<div class="feature-container-wrapper">
+
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" [destroyOnHide]="false" class="nav-tabs justify-content-center">
+        <li [ngbNavItem]="1" [destroyOnHide]="true">
+            <a ngbNavLink class="select">
+                <span class="material-symbols-outlined">
+                    add_circle
+                </span>
+                <div> Calculators</div>
+            </a>
+            <ng-template ngbNavContent>
+                <div class="feature-calc-container">
+                    <div class="calc-title">Calculators</div>
+                    <div class="calc-list">
+                        <div>
+                            <img src="https://homeloans.sbi/images/calc-img1.png" alt="calc">
+                            <div><a href="emi" style="color:rgb(245, 245, 248)">Home Loan EMI</a></div>
+                        </div>
+                        <div>
+                            <img src="https://homeloans.sbi/images/calc-img5.png" alt="calc">
+                            <div><a href="eligibilitycal" style="color:rgb(245, 245, 248)">Calculate Eligibility</a></div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+            <a ngbNavLink class="select">
+                <span class="material-symbols-outlined">
+                    near_me
+                </span>
+                <div>
+                    Apply Online
+                </div>
+            </a>
+            <ng-template ngbNavContent>
+                <div class="feature-calc-container">
+                    <div class="calc-title">Quick Steps for Registration</div>
+                    <div class="calc-list">
+                        <div>
+                            <img src="https://homeloans.sbi/images/apply-img1.png" alt="calc">
+                            <div>Fill Income &
+                                Property Details</div>
+                        </div>
+                        <div>
+                            <img src="https://homeloans.sbi/images/apply-img2.png" alt="calc">
+                            <div>View & Apply
+                                for Loan offers</div>
+                        </div>
+                        <div>
+                            <img src="https://homeloans.sbi/images/apply-img3.png" alt="calc">
+                            <div>Complete your
+                                Application</div>
+                        </div>
+                        <div>
+                            <img src="https://homeloans.sbi/images/apply-img4.png" alt="calc">
+                            <div>Instant
+                                Approval</div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="3">
+            <a ngbNavLink class="select">
+                <span class="material-symbols-outlined">
+                    help
+                </span>
+                <div>
+                    FAQs
+                </div>
+            </a>
+            <ng-template ngbNavContent>
+                <div class="feature-calc-container">
+                    <div class="calc-title">What HBI can help you with?</div>
+                    <div class="faq-list">
+                        <img src="https://homeloans.sbi/images/faq-icon.png" alt="calc">
+                        <div>HBI Frequently asked questions (FAQ) has listed questions and answers, all supposed to be
+                            commonly asked in context of Home Loans. To ask any query regarding the home loan, security,
+                            EMIs, etc <a href="faq" style="color:rgb(8, 5, 95)">click here</a></div>
+                        
+                        
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="4">
+            <a ngbNavLink class="select">
+                <span class="material-symbols-outlined">
+                    call
+                </span>
+                <div>
+                    Contact Us
+                </div>
+            </a>
+            <ng-template ngbNavContent>
+                <div class="feature-calc-container">
+                    <div class="calc-title">What HBI can help you with?</div>
+                    <div class="faq-list">
+                        <img src="https://homeloans.sbi/images/co-icon.png" alt="calc">
+                        <div>We have a network that is unmatched in terms of reach. We have a network of 16000 +
+                            branches, sales teams and processing centers across the country to cater to the housing loan
+                            requirements of individual customers. Please click here to locate us and contact us for your
+                            home loan requirements.
+                            <a href="contact" style="color:rgb(8, 5, 95)">click here</a></div>
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+    </ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
+
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="icon ion-social-instagram"></i></a>
+            <a href="#"><i class="icon ion-social-snapchat"></i></a>
+            <a href="#"><i class="icon ion-social-twitter"></i></a>
+            <a href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+               
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">Services</a></li>
+        <li class="list-inline-item"><a href="#">About</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+    </ul>
+    <p class="copyright">HBI Home loans © 2022</p>
+</footer>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>

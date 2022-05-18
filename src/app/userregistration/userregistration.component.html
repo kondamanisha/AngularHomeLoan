@@ -1,0 +1,176 @@
+<section class="gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">User Registration Form</h3>
+              <form [formGroup]="contactForm" (ngSubmit)="Onsubmit()" novalidate>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                      <label class="form-label" for="firstName">First Name : </label>
+                    <input type="text" id="firstName" class="form-control form-control-lg" formControlName="firstName"/>
+                  </div>
+                  <div
+                  *ngIf="!firstName?.valid && (firstName?.dirty ||firstName?.touched)">
+                  <div [hidden]="!firstName?.errors?.['required']">
+                    First Name is required
+                  </div>
+                  <div [hidden]="!firstName?.errors?.['minlength']">
+                    Min Length is 10
+                  </div>
+                </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                      <label class="form-label" for="lastName">Last Name : </label>
+                    <input type="text" id="lastName" class="form-control form-control-lg" formControlName="lastName"/>                    
+                  </div>
+                  <div
+                  *ngIf="!lastName?.valid && (lastName?.dirty ||lastName?.touched)">
+                  <div [hidden]="!lastName?.errors?.['required']">
+                    Last Name is required
+                  </div>
+                  <div [hidden]="!lastName?.errors?.['minlength']">
+                    Min Length is 10
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-6 mb-4 pb-2">
+                    <div class="form-outline">
+                      <label class="form-label" for="emailid">Email Id :</label>
+                      <input type="text" id="emailid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control form-control-lg" formControlName="emailid" />
+                    </div>
+                    <div *ngIf="!emailid?.valid && (emailid?.dirty ||emailid?.touched)">
+                      <div [hidden]="!emailid?.errors?.['required']">
+                        email is required
+                      </div>
+                      <div [hidden]="!emailid?.errors?.['email']">
+                        invalid email id
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                          <label class="form-label" for="phoneNumber">Phone Number :</label>
+                        <input type="mobile" id="phoneNumber" class="form-control form-control-lg" formControlName="phoneNumber"/>
+                      </div>
+                      <div *ngIf="!phoneNumber?.valid && (phoneNumber?.dirty ||phoneNumber?.touched)">
+                          <div [hidden]="!phoneNumber?.errors?.['required']">
+                          Phonenumber is required
+                          </div>
+                          <div [hidden]="!phoneNumber?.errors?.['minlength']">
+                            Min length is 10
+                          </div>
+                    </div>
+                    </div>
+                 
+                  <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                          <label class="form-label" for="password">Password :</label>
+                          <input type="password" id="password" class="form-control form-control-lg" formControlName="password"/>
+                      </div>
+                      <div
+                       *ngIf="!password?.valid && (password?.dirty ||password?.touched)">
+                      <div [hidden]="!password?.errors?.['required']">
+                      Password is required
+                      </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+                  <div class="form-outline datepicker w-100">
+                      <label for="dob" class="form-label">DOB</label>
+                    <input type="date" class="form-control form-control-lg" id="dob" formControlName="dob"/>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <h6 class="mb-2 pb-1">Gender: </h6>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                      value="female" checked formControlName="gender"/>
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                      value="male" formControlName="gender"/>
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                      value="other" formControlName="gender"/>
+                    <label class="form-check-label" for="otherGender">Other</label>
+                  </div>
+                </div>
+              </div>
+
+                  <div class="form-outline">
+                      <label class="form-label" for="nationality">Nationality :</label>
+                    <input type="text" id="nationality" class="form-control form-control-lg" formControlName="nationality"/>
+                  </div>
+                  <div
+                      *ngIf="!nationality?.valid && (nationality?.dirty ||nationality?.touched)">
+                      <div [hidden]="!nationality?.errors?.['required']">
+                      Nationality is required
+                      </div>
+                  </div>
+
+                  <div class="form-outline">
+                      <label class="form-label" for="aadharno">AadharNo :</label>
+                    <input type="text" id="aadharno" pattern="^[0-9]$" class="form-control form-control-lg" formControlName="aadharno"/>
+                  </div>
+                  <div *ngIf="!aadharno?.valid && (aadharno?.dirty ||aadharno?.touched)">
+                      <div [hidden]="!aadharno?.errors?.['required']">
+                      Aadhar number is required
+                      </div>
+                      <div [hidden]="!aadharno?.errors?.['minlength']">
+                        Min length is 12
+                      </div>
+                    </div>
+
+                  <div class="form-outline">
+                      <label class="form-label" for="pancardno">PanCardNo :</label>
+                    <input type="text" id="pancardno" class="form-control form-control-lg" formControlName="pancardno"/>
+                  </div>
+                  <div
+                      *ngIf="!pancardno?.valid && (pancardno?.dirty ||pancardno?.touched)">
+                      <div [hidden]="!pancardno?.errors?.['required']">
+                      PanCard is required
+                      </div>
+                  </div>
+
+                  
+                      
+              <div class="mt-4 pt-2">
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit"/>
+              </div>
+              
+            <div class="mt-4 pt-2">
+              <!-- <a href="#" class="previous">&laquo; Previous</a> -->
+              <a href="loanreq" class="next">Next &raquo;</a>
+
+              <!-- <a href="#" class="previous round">&#8249;</a> -->
+              <a href="loanreq" class="next round">&#8250;</a>
+            </div>
+
+                <div class="mt-4 pt-2">
+                      Alredy Registered?
+                      <a href="userlogin">Login to continue your application</a>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

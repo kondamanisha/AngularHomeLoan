@@ -1,0 +1,32 @@
+.home-about-container{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-about-content{
+    width: 30%;
+    padding: 0px 20px;
+    :nth-child(1){
+        color: #152b32;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    :nth-child(2){
+        color: #00aeef;
+        font-size: 26px;
+    }
+    :nth-child(3){
+        color: #333;
+        font-size: 14px;
+    }
+    a{
+        color: #00aeef;
+    }
+}
+
+img{
+    height: 310px;
+}

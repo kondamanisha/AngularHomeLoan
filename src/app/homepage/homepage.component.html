@@ -1,0 +1,65 @@
+<ul ngbNav #nav="ngbNav" [activeId]="2" class="nav-tabs header justify-content-center"></ul>
+  
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+  <div class="carousal-wrapper">
+      <app-carousal></app-carousal>
+   
+    <div class="option-container">
+        <div class="option">
+            <span class="material-symbols-outlined">
+                near_me
+            </span> <span><a href="tracker" style="color:rgb(241, 241, 247)">Application Tracker</a></span>
+        </div>
+        <div class="option">
+            <span class="material-symbols-outlined">
+                call
+            </span> <span><a href="contact" style="color:rgb(241, 241, 247)">Get a</a></span>
+            <span><a href="contact" style="color:rgb(243, 243, 247)">Call-Back</a></span>
+        </div>
+        <div class="option">
+            <span class="material-symbols-outlined">
+                check
+            </span> <span><a href="eligibilitycal" style="color:rgb(241, 241, 247)">Check Eligibility</a></span>
+        </div>
+    </div>
+  </div>
+  <div class="our-products-container">
+    <div class="our-products-box">
+        <h1>OUR</h1>
+        <h1>BENEFITS</h1>
+    </div>
+    <div class="triangle"></div>
+    <div class="products-container">
+        <!-- <div class="products-title">LTI</div> -->
+        <div class="products-title">Packages of</div>
+        <div class="products-title">Exclusive Benefits</div>
+    </div>
+    <div class="products-container">
+        <!-- <div class="products-title">LTI</div> -->
+        <div class="products-title">Low Processing charges</div>
+        <div class="products-title">No hidden costs</div>
+        <!-- <div>Interest calculation on a daily reducing balance</div> -->
+    </div>
+    <div class="products-container">
+        <!-- <div class="products-title">LTI</div> -->
+        <div class="products-title">Tax Benefit</div>
+        <div class="products-title">Interest paid</div>
+    </div>
+    <div class="products-container">
+        <!-- <div class="products-title">LTI</div> -->
+        <div class="products-title">Low Interest rates</div>
+        
+    </div>
+    <div class="products-container">
+        <!-- <div class="products-title">LTI</div> -->
+        
+        <div class="products-title">No Prepayment penalties.</div>
+    </div>
+  
+  </div>
+  <app-home-about></app-home-about>
+  <app-home-features></app-home-features>
+  <!-- <div class="home-bg"></div> -->
+  <!-- <img class="home-bg" src="assets/images/bg3.jpg" /> -->
+  <!-- <ngbd-carousel-config></ngbd-carousel-config>       -->
+  

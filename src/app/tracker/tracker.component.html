@@ -1,0 +1,24 @@
+<br><br><br><br><br><br>
+<br><br>
+<div class="bg">
+<div class="main" style="padding-left: 300px;padding-right: 300px;">
+<h3 style="color:aliceblue">Loan Tracker</h3>
+<br>
+<form [formGroup]="trackerForm" (ngSubmit)="submitForm()" novalidate>
+<div class="form-group">
+    <label style="color:aliceblue" class="form-track" for="reqid">Loan Request Id</label>
+    <input type="number" id="reqid" class="form-control form-control-lg" formControlName="reqid" />
+</div>
+<div class="form-group">
+    <label style="color:aliceblue" class="form-track" for="accno">Bank Account Number</label>
+    <input type="number" id="accno" class="form-control form-control-lg" formControlName="accno" />
+</div>
+<div class="mt-4 pt-2">
+    <input class="btn btn-primary btn-lg" button type="submit" value="Submit" />
+  </div>
+
+  <br>
+<h5>Status : Your Loan Request Is {{status}}</h5>
+</form>
+</div>
+</div>

@@ -1,0 +1,41 @@
+.gradient-custom {
+    padding-top: 60px;
+    background: #719ece;
+    display:flex;
+    background: -webkit-linear-gradient(to bottom right, rgb(120, 52, 134), rgb(32, 131, 173));
+    background: linear-gradient(to bottom right, rgb(120, 52, 134), rgb(32, 131, 173));
+    }
+    
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+      
+      a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .previous {
+        background-color: #3e58ea;
+        color: white;
+      }
+      
+      .next {
+        background-color: #3e58ea;
+        color: white;
+      }
+      
+      .round {
+        border-radius: 50%;
+      }

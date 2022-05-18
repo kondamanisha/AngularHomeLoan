@@ -1,0 +1,48 @@
+.banner-div {
+    margin-top: 75px;
+    background-image: url(/assets/images/aboutus.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-position-x: center;
+    background-position-y: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    position: relative;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+    width: 100%;
+    float: left;
+    min-height: 200px;
+}
+.container {
+    position: relative;
+}
+
+.container {
+    width: 750px;
+    min-width: 768px
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.banner-div .intro-text {
+    margin-top: 50px;
+    padding-bottom: 27px;
+    padding-left: 80px;
+    padding-top: 20px;
+    // border-left: 2px solid #fff;
+    font-size: 42px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -2px;
+    color: #fff;
+}
+
+#contact .card:hover i,#contact .card:hover h4{
+	color: #230d7d;
+	
+}

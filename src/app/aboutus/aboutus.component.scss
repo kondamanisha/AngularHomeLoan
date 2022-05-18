@@ -1,0 +1,157 @@
+
+ .banner-div {
+    margin-top: 75px;
+    background-image: url(/assets/images/aboutus.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-position-x: center;
+    background-position-y: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    position: relative;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+    width: 100%;
+    float: left;
+    min-height: 200px;
+}
+.container {
+    position: relative;
+}
+
+.container {
+    width: 750px;
+    min-width: 768px
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.banner-div .intro-text {
+    margin-top: 50px;
+    padding-bottom: 27px;
+    padding-left: 80px;
+    padding-top: 20px;
+    // border-left: 2px solid #fff;
+    font-size: 42px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -2px;
+    color: #fff;
+}
+.content{
+    float:left;
+    width:70%;
+    margin-bottom: 50px;
+}
+
+.about-content h2 {
+    color: #152b32;
+    font-size: 28px;
+    font-family: 'Roboto-Thin';
+    padding: 0 0 20px 0;
+}
+.about-content h2 span {
+    display: block;
+    font-family: 'Roboto-Medium';
+}
+.h4, h4 {
+    font-size: 18px;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+img {
+    vertical-align: middle;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+  .feature-section {
+    background: #f9f9f9;
+    width: 100%;
+    float: left;
+    padding: 20px 0 20px 0;
+}
+.container1 {
+    position: relative;
+}
+
+.container1 {
+    width: 1170px;
+}
+.container1 {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.feature-section h2 {
+    color: #152b32;
+    font-size: 28px;
+    font-family: 'Roboto-Thin';
+    padding: 0 0 20px 0;
+}
+.feature-section h2 span {
+    display: block;
+    font-family: 'Roboto-Medium';
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.feature-section ul li {
+    list-style: none;
+    width: 20%;
+    padding: 0 5px;
+    float: left;
+    text-align: center;
+}
+.feature-section ul li p {
+    padding: 0 0 15px 0;
+}
+
+

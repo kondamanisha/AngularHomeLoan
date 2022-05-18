@@ -1,0 +1,120 @@
+
+<html>
+    <head>
+     
+              <style>
+         
+.center {
+    
+  margin: auto;
+ width: 60%;
+  border: 4px solid #4013bd;
+  
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+ 
+
+  
+  
+}
+.center{
+    margin-top: 200px;
+    background-color: rgb(159, 183, 235);
+    background-image: url("assets/images/emi2.jpg"); 
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+
+    
+
+}
+
+li    { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+</style> 
+    </head>
+<div class="class-center">
+<div class="center">
+<ul>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+    <li>
+ <p>
+      <label style='color:darkslateblue;font-weight: 1000;' for="lamt">Loan Amount(₹)</label>
+      <input type="number" id="lamt" name="lamt" formControlName="lamt">
+    </p>
+   
+   
+     <div      *ngIf="!lamt?.valid && (lamt?.dirty ||lamt?.touched)">
+      <div style='color: black' [hidden]="!lamt?.errors?.['required']">
+        Loan Amount is required
+      </div>
+      <div style='color: black'  [hidden]="!lamt?.errors?.['min']">
+        Your Loan amount should be between 10k to 1cr
+      </div>
+      <div style='color: black' [hidden]="!lamt?.errors?.['max']">
+        Your Loan amount should be between 10k to 1cr
+      </div>
+      <div style='color: black'  [hidden]="!lamt?.errors?.['pattern']">
+        Only integers are allowed
+      </div>
+    </div> 
+</li>
+<li>
+    <p>
+      <label style='color:darkslateblue;font-weight: 1000;' for="lt">Loan Tenure </label>
+      <input type="number" id="lt" name="lt" formControlName="lt" >
+    </p>
+    <div
+    *ngIf="!lt?.valid && (lt?.dirty ||lt?.touched)">
+    <div style='color:black'  [hidden]="!lt?.errors?.['required']">
+      Loan Tenure  is required
+    </div>
+    <div style='color:black'  [hidden]="!lt?.errors?.['min']">
+      Your Loan Tenure should be between 12 to 84
+    </div>
+    <div style='color: black'  [hidden]="!lt?.errors?.['max']">
+        Your Loan Tenure should be between 12 to 84
+    </div>
+    <div style='color:black'  [hidden]="!lt?.errors?.['pattern']">
+        Only integers are allowed
+      </div>
+  </div> 
+</li>
+<li>
+    <p>
+      <label style='color:darkslateblue;font-weight: 1000;' for="roi">ROI </label>
+      <input type="number" id="roi" name="roi" formControlName="roi">
+    </p>
+    <div
+    *ngIf="!roi?.valid && (roi?.dirty ||roi?.touched)">
+    <div style='color:black'  [hidden]="!roi?.errors?.['required']">
+     Rate of interest is required
+    </div>
+    <div style='color:black'  [hidden]="!roi?.errors?.['min']">
+        Rate of interest is between 5 to 15
+    </div>
+    <div style='color: black' [hidden]="!roi?.errors?.['max']">
+        Rate of interest is between 5 to 15
+    </div>
+  </div> 
+</li>
+   
+    <p>{{contactForm.valid}} </p>
+   
+    <p>
+      <button type="submit" [disabled]="!contactForm?.valid">Submit</button>
+      
+    </p>
+    <p>
+        <label style='color:brown;font-weight: 1000;'  for="emi">EMI(₹)</label>
+        <input type="text" id="emi" name="emi" value="{{E }}">
+      </p>
+  </form>
+</ul>
+</div>
+
+</div>
+   </html>

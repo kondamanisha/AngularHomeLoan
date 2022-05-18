@@ -1,0 +1,43 @@
+
+<ul ngbNav #nav="ngbNav" [activeId]="2" class="nav-tabs header justify-content-center">
+ 
+    <li ngbDropdown class="nav-item logo-item">
+        <img class="logo" src="/assets/images/logo.jpg" alt="">
+        <div class="logo-content">Home Loans</div>
+    </li>
+
+    <ul ngbNav #nav="ngbNav" class="nav-tabs">
+      <li ngbNavItem>
+        <a ngbNavLink routerLink="home">Home</a>
+        <ng-template ngbNavContent>
+
+        </ng-template>
+      </li>
+      <li ngbNavItem>
+        <a ngbNavLink routerLink="aboutus">About Us</a>
+        <ng-template ngbNavContent>
+        </ng-template>
+      </li>
+      <li ngbNavItem>
+          <a ngbNavLink routerLink="feature">Features</a>
+          <ng-template ngbNavContent>
+            
+          </ng-template>
+        </li>
+    </ul>
+    <li ngbDropdown class="nav-item">
+        <a href (click)="false" class="nav-link" ngbDropdownToggle>Login</a>
+        <div ngbDropdownMenu>
+            <button routerLink="adminlogin" ngbDropdownItem>Admin Login</button>
+            <button routerLink="userlogin" ngbDropdownItem>User Login</button>
+        </div>
+    </li>
+
+    
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    <button routerLink="userreg" type="button" class="apply-button">Apply Now</button>
+  </ul>
+
+
+
+  

@@ -1,0 +1,99 @@
+
+
+.our-products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.our-products-box {
+    background-color: #00adef;
+    color: #ffffff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    h1 {
+        font-size: 18px;
+    }
+}
+
+.triangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-bottom: 110px solid rgba(255, 0, 0, 0);
+    border-left: 110px solid #00adef;
+    overflow: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        transform: scale(1.1);
+        left: -111px;
+        width: 0;
+        height: 0;
+        border-bottom:110px solid #f9f9f9;
+        border-left: 110px solid #5e6f74;
+        z-index: -1;
+    }
+}
+
+.triangle ::before {}
+
+.products-container {
+    background-color: rgb(249 249 249);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 50px;
+    border-right: 1px solid #ececec;
+    width: 80%;
+    height: 110px;
+}
+
+.products-container:nth-child(n-1) {
+    font-size: 14px;
+    color: #686b6c;
+}
+
+.products-title {
+    color: #0199cd;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.carousal-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .option-container {
+        position: fixed;
+        right: 0;
+        top: 24%;
+        color: #ffff;
+        background-color: #2f2c73;
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-left: solid 1px #23527c;
+        width: 90px;
+        box-shadow:-4px 1px 8px 0px rgba(109, 109, 109, 0.24);
+
+        .option {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            // border-bottom: solid 1px black;
+            padding: 15px 0px;
+            box-shadow:inset 0px -1px 0px 0px rgb(109, 109, 109)
+        }
+    }
+}

@@ -1,0 +1,57 @@
+<ul ngbNav #nav="ngbNav" [activeId]="2" class="nav-tabs header justify-content-center"></ul>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="adminlogin.component.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+    <div class="container">
+      <input type="checkbox" id="flip">
+      <div class="cover">
+        <div class="front">
+          <!--<img src="images/frontImg.jpg" alt="">-->
+          <div class="text">
+            <span class="text-1">Welcome Back!</span>
+            <span class="text-2">Login into your Account</span>
+          </div>
+        </div>
+        <div class="back">
+          <img class="backImg" src="assets/images/aboutus.jpg" alt="">
+          <div class="text">
+            <span class="text-2">Complete miles of journey <br> with one step</span>
+            <span class="text-1">Let's get started</span>
+          </div>
+        </div>
+      </div>
+      <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">ADMIN LOGIN</div>
+
+          <form action="#" [formGroup]="contactForm" (ngSubmit)="Onsubmit()" novalidate>
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" formControlName="emailid" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" formControlName="password" required>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+                
+                <input type="submit" value="Submit">
+              </div>
+              <!-- <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div> -->
+            </div>
+        </form>
+    </div>
+    
+</div>
+</div>
+</div>
+</body>
+

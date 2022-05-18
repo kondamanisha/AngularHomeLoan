@@ -1,0 +1,46 @@
+.home-bg {
+    width: 100%;
+}
+
+.nav-tabs.header.nav{
+    border: none;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+}
+
+.logo-item{
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo-content{
+        color: #2c2e8c;
+        font-weight: 500;
+        font-size: 20px;
+        padding-left: 10px;
+    border-left: solid 1px rgb(214, 214, 214);
+    }
+}
+
+.logo{
+    height:40px;
+    margin-left: 30px;
+    padding-right: 10px;
+}
+
+.home-loan {
+    color: red;
+}
+ .apply-button {
+   background-color:  #00adef;
+    outline: none;
+   border: none;
+  height: 40px;
+ }
